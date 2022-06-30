@@ -1,9 +1,8 @@
-def call(body) {
+def call(int value1, int value2) {
     
-    def res = new Adder().Add(4,2)
+    def res = new Adder().Add(value1, value2)
 
     println "$res"
-    currentBuild.result = 'SUCCESS' //FAILURE to fail
 
     return this
 }
